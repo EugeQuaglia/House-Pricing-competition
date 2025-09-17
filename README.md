@@ -10,11 +10,15 @@ Costruire un modello di Machine Learning in grado di predire il prezzo di vendit
 
 ## Dataset
 Il dataset è costruito come indicato nel file presente nella cartella data e presenta alcune criticità:
+
 -Dimensione ridotta del campione.
+
 -Distribuzione concentrata nella fascia di prezzo 100k–500k.
+
 -Eterogeneità delle feature: numeriche, con range molto diversi di valori, categoriche.
 
 ## Strategia
+
 -È stato scelto XGBoost come modello principale, puntando soprattutto sulla qualità dei dati per migliorare le performance.
 
 -Feature engineering: creazione di variabili più rappresentative (ad es. numero totale di bagni, superficie totale). È stata inoltre introdotta una flag LuxuryHome per aiutare il modello a gestire meglio il range > 500k.
