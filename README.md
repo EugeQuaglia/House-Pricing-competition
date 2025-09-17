@@ -5,9 +5,31 @@
   <img src="assets/banner.png" alt="Ricostruzione del contenuto al variare del layer (conv1_2 → conv5_2)" width="900">
 </p>
 
-## Setup
+## Obiettivo
+Costruire un modello di Machine Learning in grado di predire il prezzo di vendita di una casa.
+
+## Dataset
+Il dataset è costruito come indicato nel file presente nella cartella data e presenta alcune criticità:
+-Dimensione ridotta del campione.
+-Distribuzione concentrata nella fascia di prezzo 100k–500k.
+-Eterogeneità delle feature: numeriche, con range molto diversi di valori, categoriche.
+
+## Strategia
+-È stato scelto XGBoost come modello principale, puntando soprattutto sulla qualità dei dati per migliorare le performance.
+
+-Feature engineering: creazione di variabili più rappresentative (ad es. numero totale di bagni, superficie totale). È stata inoltre introdotta una flag LuxuryHome per aiutare il modello a gestire meglio il range > 500k.
+
+-Analisi delle correlazioni tra feature ed eliminazione di variabili fortemente collineari per ridurre rumore e varianza.
+
+-Correzione della skewness: trasformazioni logaritmiche sulle feature con skewness elevata (ad es. > 5).
+
+Tutti i passaggi di analisi dati sono documentati nel codice/notebook del progetto.
 
 ## Risultati
+
+-RMSE medio (tra predetto e reale) < 10% del prezzo della casa.
+
+-Top 3.1% nella leaderboard della competizione Kaggle.
 
 ---
 
