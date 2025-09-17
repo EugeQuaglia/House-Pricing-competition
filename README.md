@@ -2,7 +2,7 @@
 
 <!-- FIGURA 1: Contenuto vs layer -->
 <p align="center">
-  <img src="assets/banner.png" alt="Ricostruzione del contenuto al variare del layer (conv1_2 → conv5_2)" width="900">
+  <img src="Plots/flag.PNG" alt="Ricostruzione del contenuto al variare del layer (conv1_2 → conv5_2)" width="900">
 </p>
 
 ## Obiettivo
@@ -34,6 +34,11 @@ Tutti i passaggi di analisi dati sono documentati nel codice/notebook del proget
 - RMSE medio (tra predetto e reale) < 10% del prezzo della casa.
 
 - Top 3.1% nella leaderboard della competizione Kaggle.
+
+<!-- FIGURA 1: prezzi predetti vs prezzi veri -->
+<p align="center">
+  <img src="Plots/figura_1.png" alt="prezzi predetti vs prezzi veri" width="900">
+</p>
 
 ---
 
