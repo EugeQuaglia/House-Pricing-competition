@@ -37,7 +37,7 @@ Tutti i passaggi di analisi dati sono documentati nel codice/notebook del proget
 
 <!-- FIGURA 1: prezzi predetti vs prezzi veri -->
 <p align="center">
-  <img src="Home price/Plots/Figura_1.png" alt="prezzi predetti vs prezzi veri" width="900">
+  <img src="Home price/Plots/Figure_1.png" alt="prezzi predetti vs prezzi veri" width="900">
 </p>
 
 ---
